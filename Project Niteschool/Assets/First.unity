@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 133337859}
   - component: {fileID: 133337866}
   - component: {fileID: 133337867}
+  - component: {fileID: 133337865}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -276,9 +277,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 133337860}
+  - {fileID: 133337866}
   selectedCommands:
-  - {fileID: 133337864}
+  - {fileID: 133337865}
   variables: []
   description: 
   stepPause: 0
@@ -419,6 +420,32 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &133337865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  storyText: "\u4E94\u6708\u7684\u590F\u65E5\uFF0C\u8857\u9053\u88AB\u70C8\u65E5\u84B8\u70E4\uFF0C\u884C\u4EBA\u5011\u5404\u500B\u90FD\u8868\u73FE\u51FA\u75B2\u5026\u7684\u6A23\u8C8C{wc}\r\n\t\u6211\u4E5F\u4E0D\u4F8B\u5916\uFF0C\u7562\u7ADF\u8AB0\u4E5F\u4E0D\u60F3\u8D70\u51FA\u5B9B\u5982\u5929\u5802\u822C\u7684\u51B7\u6C23\u623F{wc}\r\n\t\u4F46\u4E5F\u6C92\u8FA6\u6CD5\uFF0C\u4ECA\u5929\u662F\u671F\u4E2D\u8003\uFF0C\u60F3\u8E7A\u4E5F\u4E0D\u80FD\u8E7A\u3002{wc}\r\n\t\u4E3B\u89D2\uFF1A\u5509......{wc}\r\n\t\u4E3B\u89D2\uFF1A\u4E0D\u77E5\u9053\u6628\u665A\u770B\u7684\u8003\u53E4\u5230\u5E95\u6709\u6C92\u6709\u7528{wc}\r\n\t\u60F3\u5230\u9019\u88E1\uFF0C\u6211\u4E0D\u7981\u770B\u4E86\u4E0B\u624B\u6A5F\uFF0C\u518D\u904E\u4E09\u5206\u9418\u5C31\u8981\u8003\u8A66\u4E86{wc}\r\n\t\u4E3B\u89D2\uFF1A\uFF01\uFF01\r{punch=10,0.5}{wc}\n\t\u4E3B\u89D2\uFF1A\u5B8C\u86CB\u4E86\uFF01\u9019\u8001\u5E2B\u8003\u8A66\u6703\u9396\u9580\u7684\u5440{wc}\r\n\t\u4E3B\u89D2\uFF1A\u6C92\u8FA6\u6CD5\u4E86\uFF0C\u9084\u662F\u8DD1\u904E\u53BB\u5427......{wc}\r\n\t\u62FF\u8D77\u8DD1\u767E\u7C73\u7684\u901F\u5EA6\uFF0C\u6211\u4E00\u8DEF\u5411\u76EE\u7684\u5730\u6559\u5BA4\u885D\u904E\u53BB......{wc}\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &133337866
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -442,7 +469,8 @@ MonoBehaviour:
   blockName: "\u5E8F\u7AE0"
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 133337865}
 --- !u!114 &133337867
 MonoBehaviour:
   m_ObjectHideFlags: 2
