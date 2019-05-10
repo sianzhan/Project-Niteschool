@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -490,7 +490,6 @@ GameObject:
   - component: {fileID: 133337948}
   - component: {fileID: 133337947}
   - component: {fileID: 133337946}
-  - component: {fileID: 133337945}
   - component: {fileID: 133337984}
   - component: {fileID: 133337983}
   - component: {fileID: 133337982}
@@ -552,6 +551,11 @@ GameObject:
   - component: {fileID: 133338038}
   - component: {fileID: 133338037}
   - component: {fileID: 133338036}
+  - component: {fileID: 133338039}
+  - component: {fileID: 133337945}
+  - component: {fileID: 133338040}
+  - component: {fileID: 133338041}
+  - component: {fileID: 133338042}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -572,11 +576,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1103.622, y: -16.30221}
+  scrollPos: {x: -863.1903, y: -36.14901}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.7550046
+  zoom: 0.7899998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -585,7 +589,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 133337976}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 133338042}
   variables: []
   description: 
   stepPause: 0
@@ -613,7 +618,7 @@ MonoBehaviour:
   indentLevel: 0
   text: "\u958B\u59CB\u904A\u6232"
   description: 
-  targetBlock: {fileID: 133337860}
+  targetBlock: {fileID: 133337914}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -669,8 +674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 32.86766
-    y: 136.4837
+    x: 31.601837
+    y: 133.95206
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -678,7 +683,7 @@ MonoBehaviour:
   itemId: 0
   blockName: "\u958B\u59CB"
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 133338039}
   commandList:
   - {fileID: 133338035}
   - {fileID: 133337968}
@@ -2733,24 +2738,25 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &133337945
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0729d4f369e6a4241a6e7e3b8b9c1933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 160
+  itemId: 224
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 133337949}
-  startLabel:
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1682101270}
+  _parameterName:
     stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+    stringVal: weird trigger
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
 --- !u!114 &133337946
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3374,7 +3380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1508.8601
+    x: 1507.5356
     y: 219.26175
     width: 120
     height: 40
@@ -3386,7 +3392,10 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 133337945}
+  - {fileID: 133338041}
+  - {fileID: 133338040}
   - {fileID: 133338038}
+  - {fileID: 133338042}
   - {fileID: 133338037}
   - {fileID: 133338036}
 --- !u!114 &133337977
@@ -4789,6 +4798,72 @@ MonoBehaviour:
   atTime: 0
   loop: 1
   fadeDuration: 1
+--- !u!114 &133338039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 133337861}
+  waitForFrames: 1
+--- !u!114 &133338040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 225
+  indentLevel: 0
+  duration: 0
+  fadeOut: 1
+  targetView: {fileID: 545887919}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 1095739582}
+--- !u!114 &133338041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 226
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
+--- !u!114 &133338042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3c9751268124c9390e807040e57447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 227
+  indentLevel: 0
+  pitch: 0.567
+  fadeDuration: 0
+  waitUntilFinished: 1
 --- !u!1 &146401166
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,6 +5877,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &545887919 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: e0d427add844a4d9faf970a3afa07583,
+    type: 2}
+  m_PrefabInternal: {fileID: 1902004250}
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
 --- !u!1 &600349448
 GameObject:
   m_ObjectHideFlags: 0
