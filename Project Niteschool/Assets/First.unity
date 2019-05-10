@@ -476,6 +476,9 @@ GameObject:
   - component: {fileID: 133338026}
   - component: {fileID: 133338025}
   - component: {fileID: 133337862}
+  - component: {fileID: 133338038}
+  - component: {fileID: 133338037}
+  - component: {fileID: 133338036}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -496,11 +499,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -630.44666, y: 64.13897}
+  scrollPos: {x: -1103.622, y: -16.30221}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.6050047
+  zoom: 0.7550046
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -508,7 +511,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 133337949}
+  - {fileID: 133337976}
   selectedCommands: []
   variables: []
   description: 
@@ -1924,8 +1927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1374.4166
-    y: 223.93129
+    x: 1377.0656
+    y: 225.25578
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3298,7 +3301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1512.9839
+    x: 1508.8601
     y: 219.26175
     width: 120
     height: 40
@@ -3310,6 +3313,9 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 133337945}
+  - {fileID: 133338038}
+  - {fileID: 133338037}
+  - {fileID: 133338036}
 --- !u!114 &133337977
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4652,6 +4658,64 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
+--- !u!114 &133338036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 223
+  indentLevel: 0
+  text: "\u7E7C\u7E8C\u904A\u6232"
+  description: 
+  targetBlock: {fileID: 133337949}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &133338037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 222
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
+--- !u!114 &133338038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 95e95a089c632134091233b7cc50aae2, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &146401166
 GameObject:
   m_ObjectHideFlags: 0
@@ -8011,6 +8075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682101268}
   - component: {fileID: 1682101269}
+  - component: {fileID: 1682101270}
   m_Layer: 0
   m_Name: ntust_front
   m_TagString: Untagged
@@ -8075,6 +8140,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &1682101270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682101267}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f86869bdf5f34cc4e8f66a59c1b72539, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1748034629 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
