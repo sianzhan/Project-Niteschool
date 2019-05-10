@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -259,10 +259,6 @@ GameObject:
   - component: {fileID: 133337951}
   - component: {fileID: 133337946}
   - component: {fileID: 133337950}
-  - component: {fileID: 133337949}
-  - component: {fileID: 133337948}
-  - component: {fileID: 133337947}
-  - component: {fileID: 133337945}
   - component: {fileID: 133337944}
   - component: {fileID: 133337952}
   - component: {fileID: 133337953}
@@ -321,9 +317,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 133337870}
+  - {fileID: 133337882}
   selectedCommands:
-  - {fileID: 133337936}
+  - {fileID: 133337946}
   variables: []
   description: 
   stepPause: 0
@@ -351,7 +347,7 @@ MonoBehaviour:
   indentLevel: 0
   text: "\u958B\u59CB\u904A\u6232"
   description: 
-  targetBlock: {fileID: 133337872}
+  targetBlock: {fileID: 133337870}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -608,8 +604,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 133337975}
-  - {fileID: 133337880}
   - {fileID: 133337957}
+  - {fileID: 133337880}
   - {fileID: 133337954}
   - {fileID: 133337938}
   - {fileID: 133337879}
@@ -846,7 +842,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &133337881
 MonoBehaviour:
@@ -887,7 +883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 505.74268
+    x: 507.17123
     y: 224.09352
     width: 120
     height: 40
@@ -900,11 +896,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 133337950}
   - {fileID: 133337883}
-  - {fileID: 133337949}
-  - {fileID: 133337945}
   - {fileID: 133337946}
-  - {fileID: 133337948}
-  - {fileID: 133337947}
   - {fileID: 133337944}
   - {fileID: 133337889}
   - {fileID: 133337888}
@@ -2411,26 +2403,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &133337945
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 133337857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 123
-  indentLevel: 0
-  duration: 0
-  fadeOut: 1
-  targetView: {fileID: 1748034630}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &133337946
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2457,66 +2429,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &133337947
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 133337857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 120
-  indentLevel: 0
-  duration: 0
-  fadeOut: 1
-  targetView: {fileID: 1748034630}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &133337948
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 133337857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 118
-  indentLevel: 0
-  duration: 0.15
-  fadeOut: 1
-  targetView: {fileID: 1264643057}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &133337949
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 133337857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 117
-  indentLevel: 0
-  duration: 0.1
-  fadeOut: 1
-  targetView: {fileID: 1431854746}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 0.072}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &133337950
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3531,7 +3443,7 @@ GameObject:
   - component: {fileID: 600349449}
   - component: {fileID: 600349450}
   m_Layer: 0
-  m_Name: View_ntust_front
+  m_Name: View_NTUST_Front
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3544,7 +3456,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600349448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 299.7, y: 92.5, z: 0}
+  m_LocalPosition: {x: 300, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953810751}
@@ -4228,7 +4140,7 @@ GameObject:
   - component: {fileID: 1257771319}
   - component: {fileID: 1257771320}
   m_Layer: 0
-  m_Name: view_black
+  m_Name: View_Black
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4266,12 +4178,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 2054735517}
---- !u!114 &1264643057 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11400000, guid: e0d427add844a4d9faf970a3afa07583,
-    type: 2}
-  m_PrefabInternal: {fileID: 2054735517}
-  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
 --- !u!1001 &1270692592
 Prefab:
   m_ObjectHideFlags: 0
@@ -4407,12 +4313,6 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 1270692592}
---- !u!114 &1431854746 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11400000, guid: e0d427add844a4d9faf970a3afa07583,
-    type: 2}
-  m_PrefabInternal: {fileID: 1270692592}
-  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
 --- !u!1 &1615155233
 GameObject:
   m_ObjectHideFlags: 0
