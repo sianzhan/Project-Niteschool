@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &133337857
 GameObject:
@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 133337984}
   - component: {fileID: 133337983}
   - component: {fileID: 133337982}
+  - component: {fileID: 133337985}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -318,11 +319,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -520.7967, y: -77.16467}
+  scrollPos: {x: -31.511637, y: -44.639736}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
-  zoom: 0.6400002
+  zoom: 0.75500464
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -330,9 +331,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 133337895}
+  - {fileID: 133337891}
   selectedCommands:
-  - {fileID: 133337896}
+  - {fileID: 133337892}
   variables: []
   description: 
   stepPause: 0
@@ -360,7 +361,7 @@ MonoBehaviour:
   indentLevel: 0
   text: "\u958B\u59CB\u904A\u6232"
   description: 
-  targetBlock: {fileID: 133337860}
+  targetBlock: {fileID: 133337895}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -415,8 +416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 35.188267
-    y: 141.11395
+    x: 32.539276
+    y: 139.78946
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -454,7 +455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133337864
 MonoBehaviour:
@@ -1123,7 +1124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 944.2849
+    x: 942.9604
     y: 225.0454
     width: 120
     height: 40
@@ -1224,7 +1225,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 792.49817
-    y: 226.92336
+    y: 228.24785
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1251,6 +1252,7 @@ MonoBehaviour:
   - {fileID: 133337983}
   - {fileID: 133337982}
   - {fileID: 133337952}
+  - {fileID: 133337985}
   - {fileID: 133337899}
   - {fileID: 133337979}
   - {fileID: 133337953}
@@ -2624,7 +2626,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u90A3\u662F\u4E00\u984C\u5FAE\u7A4D\u5206"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 326010430}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3186,7 +3188,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &133337982
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
@@ -3212,7 +3214,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &133337983
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
@@ -3232,7 +3234,7 @@ MonoBehaviour:
   targetCamera: {fileID: 0}
 --- !u!114 &133337984
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
@@ -3250,6 +3252,35 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &133337985
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 164
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 326010430}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 46e6d98554641b54ca4e6e807c1e2f21, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 2061670818}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!4 &161295234 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
@@ -3299,7 +3330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &282310298
 Prefab:
@@ -3390,7 +3421,11 @@ MonoBehaviour:
   nameText: ???
   nameColor: {r: 0.30147058, g: 0.10861807, b: 0.10861807, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 53a6ba036c93e474e938135952197849, type: 3}
+  - {fileID: 21300000, guid: d997a98daae3d6f4d8a1bc1107dee6f4, type: 3}
+  - {fileID: 21300000, guid: 49f8cc840b191ec4683e18f3c74d8426, type: 3}
+  - {fileID: 21300000, guid: 46e6d98554641b54ca4e6e807c1e2f21, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -3406,6 +3441,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &379863558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 379863560}
+  - component: {fileID: 379863559}
+  m_Layer: 0
+  m_Name: Nyarla
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &379863559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379863558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: ???
+  nameColor: {r: 0.30147058, g: 0.10861807, b: 0.10861807, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: 53a6ba036c93e474e938135952197849, type: 3}
+  - {fileID: 21300000, guid: d997a98daae3d6f4d8a1bc1107dee6f4, type: 3}
+  - {fileID: 21300000, guid: 49f8cc840b191ec4683e18f3c74d8426, type: 3}
+  - {fileID: 21300000, guid: 46e6d98554641b54ca4e6e807c1e2f21, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &379863560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379863558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &403611129
 Prefab:
@@ -3891,7 +3978,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410270, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
@@ -4032,7 +4119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &814157658
 GameObject:
@@ -4107,7 +4194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &837614981 stripped
 Transform:
@@ -4878,7 +4965,7 @@ Transform:
   - {fileID: 600349449}
   - {fileID: 1257771319}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1979558769
 Prefab:
