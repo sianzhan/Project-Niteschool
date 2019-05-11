@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 133338065}
   - component: {fileID: 133337980}
   - component: {fileID: 133338049}
+  - component: {fileID: 133338059}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -597,7 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -1239.0354, y: -32.716015}
+  scrollPos: {x: -847.0049, y: 45.690193}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
@@ -609,9 +610,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 133337976}
+  - {fileID: 133337902}
   selectedCommands:
-  - {fileID: 133338050}
+  - {fileID: 133338059}
   variables: []
   description: 
   stepPause: 0
@@ -1430,7 +1431,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1034.6263
-    y: 204.26862
+    y: 202.98326
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1737,8 +1738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1287.0806
-    y: 215.48587
+    x: 1288.366
+    y: 214.20052
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1766,6 +1767,7 @@ MonoBehaviour:
   - {fileID: 133338049}
   - {fileID: 133338023}
   - {fileID: 133338017}
+  - {fileID: 133338059}
   - {fileID: 133337917}
   - {fileID: 133337916}
 --- !u!114 &133337903
@@ -3507,7 +3509,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &133337980
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
@@ -5046,7 +5048,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &133338049
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133337857}
@@ -5282,6 +5284,26 @@ MonoBehaviour:
   pitch: 1
   fadeDuration: 0
   waitUntilFinished: 1
+--- !u!114 &133338059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133337857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 254
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 1050363883}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 1095739582}
 --- !u!114 &133338061
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5919,7 +5941,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373342898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1364953724}
