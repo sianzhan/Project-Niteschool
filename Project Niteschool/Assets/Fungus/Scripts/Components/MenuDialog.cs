@@ -85,6 +85,7 @@ namespace Fungus
 
         protected virtual void Awake()
         {
+            GameManager.menuDialog = this.gameObject;
             Button[] optionButtons = GetComponentsInChildren<Button>();
             cachedButtons = optionButtons;
 

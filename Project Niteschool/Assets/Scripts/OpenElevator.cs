@@ -23,6 +23,9 @@ public class OpenElevator : MonoBehaviour {
     public float thresholdUntilOpen = 200;
 
     float accumulator = 0;
+
+    bool isBroken = false;
+
     // Use this for initialization
     void Start () {
         accumulator = 0;
@@ -37,9 +40,10 @@ public class OpenElevator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (isBroken) return;
         shiftLeft = 0;
         shiftRight = 0;
-        if(Input.anyKeyDown)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             accumulator += thresholdUntilOpen / 10;
         }
@@ -68,7 +72,7 @@ public class OpenElevator : MonoBehaviour {
         if (shiftLeft < 0) shiftLeft = 0;
         if (shiftRight < 0) shiftRight = 0;
 
-        accumulator += shiftLeft + shiftLeft;
+        accumulator += shiftLeft + shiftRight;
 
         ElevatorRight.transform.Translate(shiftRight, 0, 0);
         ElevatorLeft.transform.Translate(-shiftLeft, 0, 0);
@@ -78,6 +82,7 @@ public class OpenElevator : MonoBehaviour {
 
         if(accumulator > thresholdUntilOpen)
         {
+            isBroken = true;
             ElevatorLeft.transform.localPosition = new Vector3(-4, ElevatorLeft.transform.localPosition.y);
             ElevatorLeft.transform.rotation = Quaternion.Euler(0, 0, -4);
             ElevatorRight.transform.localPosition = new Vector3(4, ElevatorRight.transform.localPosition.y);

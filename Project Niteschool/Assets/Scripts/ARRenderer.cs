@@ -15,6 +15,7 @@ public class ARRenderer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         stopAR();
+        GameManager.arRenderer = this;
 	}
 	
 	// Update is called once per frame
