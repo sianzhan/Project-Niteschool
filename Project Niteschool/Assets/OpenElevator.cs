@@ -39,8 +39,11 @@ public class OpenElevator : MonoBehaviour {
 	void Update () {
         shiftLeft = 0;
         shiftRight = 0;
-
-        if (Input.touchCount == 2)
+        if(Input.anyKeyDown)
+        {
+            accumulator += thresholdUntilOpen / 10;
+        }
+        else if (Input.touchCount == 2)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(1).phase == TouchPhase.Moved) //第二個手指 
             {

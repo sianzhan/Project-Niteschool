@@ -18,7 +18,8 @@ namespace Fungus
         /// <summary> Click anywhere on Say Dialog to advance. </summary>
         ClickOnDialog,
         /// <summary> Click on continue button to advance. </summary>
-        ClickOnButton
+        ClickOnButton,
+        ClickOnMyArea
     }
 
     /// <summary>
@@ -39,6 +40,8 @@ namespace Fungus
         [SerializeField] protected bool ignoreMenuClicks = true;
 
         protected bool dialogClickedFlag;
+
+        protected bool areaClickedFlag;
 
         protected bool nextLineInputFlag;
 
@@ -110,6 +113,13 @@ namespace Fungus
                     dialogClickedFlag = false;
                 }
                 break;
+            case ClickMode.ClickOnMyArea:
+                if (areaClickedFlag)
+                {
+                    SetNextLineFlag();
+                    areaClickedFlag = false;
+                }
+                break;
             }
 
             if (ignoreClickTimer > 0f)
@@ -170,6 +180,24 @@ namespace Fungus
                 dialogClickedFlag = true;
             }
         }
+
+        public virtual void SetAreaClickedFlag()
+        {
+            // Ignore repeat clicks for a short time to prevent accidentally clicking through the character dialogue
+            if (ignoreClickTimer > 0f)
+            {
+                return;
+            }
+            ignoreClickTimer = nextClickDelay;
+
+            // Only applies in Click On Dialog mode
+            if (clickMode == ClickMode.ClickOnMyArea)
+            {
+                areaClickedFlag = true;
+            }
+        }
+
+
 
         /// <summary>
         /// Sets the button clicked flag.
