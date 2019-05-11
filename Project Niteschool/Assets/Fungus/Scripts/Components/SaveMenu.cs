@@ -47,6 +47,9 @@ namespace Fungus
         [Tooltip("The button which restarts the game.")]
         [SerializeField] protected Button restartButton;
 
+        [Tooltip("The CanvasGroup containing the save menu buttons(camera)")]
+        [SerializeField] protected CanvasGroup saveMenuGroup2;
+
         [Tooltip("A scrollable text field used for debugging the save data. The text field should be disabled in normal use.")]
         [SerializeField] protected ScrollRect debugView;
 
@@ -88,6 +91,7 @@ namespace Fungus
             if (!saveMenuActive)
             {
                 saveMenuGroup.alpha = 0f;
+                saveMenuGroup2.alpha = 0f;
             }
 
             var saveManager = FungusManager.Instance.SaveManager;
@@ -215,6 +219,12 @@ namespace Fungus
                 }).setOnComplete( () => {
                     saveMenuGroup.alpha = 0f;
                 });
+
+                LeanTween.value(saveMenuGroup2.gameObject, saveMenuGroup2.alpha, 0f, 0.5f).setOnUpdate((t) => {
+                    saveMenuGroup2.alpha = t;
+                }).setOnComplete(() => {
+                    saveMenuGroup2.alpha = 0f;
+                });
             }
             else
             {
@@ -223,6 +233,12 @@ namespace Fungus
                     saveMenuGroup.alpha = t;
                 }).setOnComplete( () => {
                     saveMenuGroup.alpha = 1f;
+                });
+
+                LeanTween.value(saveMenuGroup2.gameObject, saveMenuGroup2.alpha, 1f, 0.5f).setOnUpdate((t) => {
+                    saveMenuGroup2.alpha = t;
+                }).setOnComplete(() => {
+                    saveMenuGroup2.alpha = 1f;
                 });
             }
 
