@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 525.0478, y: 235.18185}
+  scrollPos: {x: 214.42207, y: 131.63994}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 292
@@ -909,8 +909,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 133337870}
+  selectedCommands:
+  - {fileID: 133338045}
   variables: []
   description: 
   stepPause: 0
@@ -1194,7 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 360.9911
+    x: 358.2663
     y: 220.85254
     width: 120
     height: 40
@@ -5278,7 +5280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 232
   indentLevel: 0
-  storyText: "\u7A81\u5982\u5176\u4F86\u7684\u8A6D\u7570\u756B\u9762\u9583\u9032\u6211\u7684\u8166\u888B\uFF0C\u96D9\u773C\u770B\u898B\u7684\u666F\u8C61\u5DF2\u6A21\u7CCA\u4E0D\u6E05\r{wc}\n\u6211\u75DB\u82E6\u7684\u62B1\u982D\u8E72\u4E0B\uFF0C\u8A66\u8457\u7DE9\u89E3\u54EA\u6015\u4E00\u7D72\u901A\u82E6\u7684\u611F\u89BA\r{wc}\t\u773C\u524D\u7684\u8DEF\u9762\u4E0D\u6BB5\u8B8A\u63DB\u8457\u984F\u8272\uFF0C\u8DEF\u7684\u76E1\u982D\u662F\u4E0D\u66FE\u5B58\u5728\u6821\u5712\u88E1\u7684\u5EFA\u7BC9\u7269{wc}\n\u6050\u61FC\u7684\u611F\u89BA\u4F54\u64DA\u4E86\u6211\u7684\u601D\u60F3"
+  storyText: "\u7A81\u5982\u5176\u4F86\u7684\u8A6D\u7570\u756B\u9762\u9583\u9032\u6211\u7684\u8166\u888B\uFF0C\u96D9\u773C\u770B\u898B\u7684\u666F\u8C61\u5DF2\u6A21\u7CCA\u4E0D\u6E05\r{wc}\n\u6211\u75DB\u82E6\u7684\u62B1\u982D\u8E72\u4E0B\uFF0C\u8A66\u8457\u7DE9\u89E3\u54EA\u6015\u4E00\u7D72\u75DB\u82E6\u7684\u611F\u89BA\r{wc}\t\u773C\u524D\u7684\u8DEF\u9762\u4E0D\u65B7\u8B8A\u63DB\u8457\u984F\u8272\uFF0C\u8DEF\u7684\u76E1\u982D\u662F\u4E0D\u66FE\u5B58\u5728\u6821\u5712\u88E1\u7684\u5EFA\u7BC9\u7269{wc}\n\u6050\u61FC\u7684\u611F\u89BA\u4F54\u64DA\u4E86\u6211\u7684\u601D\u60F3"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
