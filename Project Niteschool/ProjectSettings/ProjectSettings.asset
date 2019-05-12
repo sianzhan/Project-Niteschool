@@ -8,11 +8,11 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 3
-  targetDevice: 2
+  targetDevice: 0
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: ProjectNightSchool
+  companyName: GP
+  productName: ProjectNiteschool
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -159,6 +159,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.google.www
+    iOS: com.GP.ProjectNiteschool
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
@@ -178,7 +179,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 7.0
+  iOSTargetOSVersionString: 10.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 9.0
@@ -238,7 +239,7 @@ PlayerSettings:
   appleDeveloperTeamID: 
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
-  appleEnableAutomaticSigning: 0
+  appleEnableAutomaticSigning: 1
   clonedFromGUID: 00000000000000000000000000000000
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
@@ -298,8 +299,8 @@ PlayerSettings:
   actionOnDotNetUnhandledException: 1
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
-  enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  enableCrashReportAPI: 1
+  cameraUsageDescription: Camera access required for target detection and tracking
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 
